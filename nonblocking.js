@@ -1,13 +1,16 @@
 var fs = require('fs');
 
 var food = fs.readFile('food.txt', 'utf8', function(err, food){
-		if(err){console.log(err);}
+		if (err) {
+			console.log(err);
+		}
 		else{
-			console.log(food);
+			 console.log(food);
 			console.log('\nDRINKS');
-			}
+		}
 	}
 );
+
 
 console.log('FOOD');
 
@@ -16,4 +19,3 @@ var drinks = fs.readFile('drinks.txt', 'utf8', function(err, drinks){
 		else {console.log(drinks);}
 	}
 );
-
